@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Narayani Boutique</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #F8F8F8;
+      color: #333;
+      background-image: url('https://www.transparenttextures.com/patterns/arabesque.png');
+      background-repeat: repeat;
+    }
+    header {
+      background-color: #008B7D;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      text-align: center;
+      background-color: #4B2E2E;
+    }
+    nav a {
+      color: #FFD580;
+      text-decoration: none;
+      margin: 0 1rem;
+      display: inline-block;
+      padding: 0.75rem 0;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: rgba(255,255,255,0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #008B7D;
+      border-bottom: 2px solid #FFD580;
+      padding-bottom: 0.5rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #4B2E2E;
+      color: #FFD580;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #FFD580;
+      color: #4B2E2E;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+section:nth-of-type(1) { animation-delay: 0.2s; }
+section:nth-of-type(2) { animation-delay: 0.4s; }
+section:nth-of-type(3) { animation-delay: 0.6s; }
+section:nth-of-type(4) { animation-delay: 0.8s; }
+section:nth-of-type(5) { animation-delay: 1.0s; }
+section:nth-of-type(6) { animation-delay: 1.2s; }
+section:nth-of-type(7) { animation-delay: 1.4s; }
+/* Gallery zoom effect */
+.gallery img {
+  transition: transform 0.4s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+/* Button hover animation */
+.cta-button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #e6c15d;
+  transform: translateY(-2px);
+}
+/* Enhanced service list */
+#services ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding-left: 0;
+}
+#services li {
+  background-color: #f2f2f2;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+#services li:hover {
+  transform: translateY(-4px);
+  background-color: #ffeec9;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Narayani Boutique</h1>
+<p>Every outfit has a story. Let’s stitch yours next.</p>
+</header>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+<section class="fade-in" id="about">
+<h2>🧵 About Narayani Boutique 🧵</h2>
+<p>From a home sewing machine to a household name in fashion. Since 1995, Narayani Boutique has been the story of a passionate homemaker who turned her love for stitching into a legacy of style and self-reliance.</p>
+<p>Today, Narayani Boutique continues to offer bespoke tailoring, perfect fittings, and one-of-a-kind designs — made just for you.</p>
+</section>
+<section class="fade-in">
+<h2>Why Choose Us?</h2>
+<ul>
+<li>30 years of tailoring expertise since 1995</li>
+<li>Perfect custom fits &amp; unique designs</li>
+<li>Warm, personalized service from a trusted local boutique</li>
+<li>Beautiful traditional &amp; modern styles for women and kids</li>
+</ul>
+</section>
+<section class="fade-in fade-in" id="services">
+<h2>✨ Our Services ✨</h2>
+<p>At <strong>Narayani Boutique</strong>, every stitch tells a story. We specialize in crafting custom outfits that celebrate tradition, individuality, and elegance. Here’s what we offer:</p>
+<h3>👗 Customized Tailoring</h3>
+<p>Perfectly tailored outfits designed just for you — fitted to your measurements, your style, and your story.</p>
+<h3>✨ Designer Blouses</h3>
+<p>From classic cuts to bold contemporary styles, we create designer blouses that elevate your saree look.</p>
+<h3>💫 Designer Lehengas</h3>
+<p>Bridal, festive, or party wear — our lehengas are handcrafted to turn heads, crafted with intricate details and luxurious fabrics.</p>
+<h3>🌸 Designer Suits</h3>
+<p>Chic, comfortable, and custom-made — our suits are tailored for everyday elegance and special moments alike.</p>
+<h3>🎀 Ready-to-Wear Sarees</h3>
+<p>Style meets convenience. Pre-draped, pre-pleated sarees that save you time without compromising on grace.</p>
+<h3>🎉 Party Gowns</h3>
+<p>Be the star of every celebration. Our gowns combine glamour, fit, and flow — designed to make you shine.</p>
+<h3>👩‍👧 Traditional Wear for Women &amp; Kids</h3>
+<p>Matching mother-daughter sets or classic ethnic wear — we bring cultural charm to all ages with intricate detailing and comfort.</p>
+</section>
+<section class="fade-in" id="gallery">
+<h2>Gallery</h2>
+<div class="gallery"><img alt="Designer Blouse Pink" src="narayani_boutique_with_emojis (1)_0.jpg"/><img alt="Designer Blouse Green" src="narayani_boutique_with_emojis (1)_1.jpg"/><img alt="Designer Blouse Golden Front" src="narayani_boutique_with_emojis (1)_2.jpg"/><img alt="Designer Blouse Golden Back" src="narayani_boutique_with_emojis (1)_3.jpg"/></div>
+</section>
+<section class="fade-in" id="reviews">
+<div class="container">
+<h2>❤️ Customer Reviews</h2>
+<p><strong>⭐ Shalini S.</strong> (5 months ago)<br/>
+    “I liked their service.”</p>
+<p><strong>⭐ Shambhavi Singh</strong> (2 months ago)<br/>
+    “The best boutique in Varanasi! Perfect fitting and a wonderful experience indeed… one must try!”</p>
+<p><strong>⭐ Sumedha Yadav</strong> (4 months ago)<br/>
+    “All services very very nice.”</p>
+<p><strong>⭐ Rahoul Bhasin Addicction</strong> (6 years ago)<br/>
+    “Nice stitching, reasonable cost, on-time delivery.”</p>
+<p><strong>⭐ Shreya Gupta</strong> (2 months ago)<br/>
+    “The best boutique for designer blouses! The stitching quality and fitting are just perfect — exactly what I was looking for. Highly recommended for anyone who wants beautiful, custom blouses that fit like a dream.”</p>
+</div>
+</section>
+<section class="fade-in" id="timings">
+<div class="container">
+<h2>🕒 Weekly Timings</h2>
+<ul>
+<li>Mon – Saturday: 10:00 AM – 9:00 PM</li>
+<li>Sunday: By appointment only</li>
+</ul>
+</div>
+</section>
+<section class="fade-in" id="contact">
+<h2>Contact Us</h2>
+<p><strong>Phone:</strong> <a href="tel:+919336915530">+91 9336915530</a></p>
+<p><strong>Email:</strong> <a href="mailto:naraayaniboutique121@gmail.com">naraayaniboutique121@gmail.com</a></p>
+<p><strong>WhatsApp:</strong> <a href="https://wa.link/b7xqvi">Chat on WhatsApp</a></p>
+<p><strong>Instagram:</strong> <a href="https://www.instagram.com/narayani_boutique3">Follow Us</a></p>
+<p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/16jo1XqhKE/?mibextid=qi2Omg">Visit Page</a></p>
+<p><strong>Address:</strong> <a href="https://maps.app.goo.gl/QtgM6nrAzFm3puJ79">Find us on Google Maps</a></p>
+<p><strong>Sunday:</strong> Appointments only</p>
+</section>
+<footer>
+<p>© 2025 Narayani Boutique. All rights reserved.</p>
+</footer>
+</body>
+</html>
